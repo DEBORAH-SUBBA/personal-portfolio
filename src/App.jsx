@@ -16,10 +16,10 @@ function App() {
       <div className={styles.pageContainer}>
         <Hero />
         <About />
-        <Skills />
+         <Skills />
         <Achivements />
         <Experience />
-        <Contact />
+        <Contact /> 
         
       </div>
       <Footer />

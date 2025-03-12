@@ -1,7 +1,30 @@
 import React from "react";
 import styles from "./Experience.module.css";
-import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+import amazon from "../../../public/assets/history/amazon.jpeg"
+import portfolio from "../../../public/assets/history/portfolio.jpeg"
+import weather from "../../../public/assets/history/weather.jpeg"
+
+const history =[
+  {
+    "organisation": "Amazon Replica",
+    "imageSrc": amazon,
+    "githubLink": "https://github.com/yourusername/amazon-replica",
+    "tools": ["React.js", "Node.js", "Express", "MongoDB"]
+  },
+  {
+    "organisation": "Personal Portfolio Website",
+    "imageSrc": portfolio,
+    "githubLink": "https://github.com/yourusername/portfolio-website",
+    "tools": ["HTML", "CSS"]
+  },
+  {
+    "organisation": "Weather App",
+    "imageSrc": weather,
+    "githubLink": "https://github.com/yourusername/weather-app",
+    "tools": ["React.js", "API", "CSS"]
+  }
+]
+
 
 export const Experience = () => {
   return (
@@ -10,7 +33,7 @@ export const Experience = () => {
       <div className={styles.cardGrid}>
         {history.map((item, id) => (
           <div key={id} className={styles.card}>
-            <img src={getImageUrl(item.imageSrc)} alt={item.organisation} />
+            <img src={item.imageSrc} alt={item.organisation} />
             <div className={styles.cardDetails}>
               <h3>{item.organisation}</h3>
 
