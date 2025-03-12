@@ -1,4 +1,3 @@
-export function getImageUrl(imagePath) {
-    return imagePath ? `/public/assets/${imagePath}` : "/assets/default.png";
-  }
-  
+import aboutImg from "../public/assets/about/aboutImage.png"
+
+export const images= [aboutImg]
