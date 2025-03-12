@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .copyright {
+    margin: 0;
+  }
+  
+@media (max-width: 750px) {
+  .copyright{
+    font-size: 12px;
+  }
+  
+}

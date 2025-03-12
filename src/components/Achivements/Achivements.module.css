@@ -1,0 +1,96 @@
+@import "../../vars.css";
+
+.achievementsContainer {
+  color: var(--color-text);
+  margin: 60px auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Title */
+.achievementsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.achievementsGrid {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.achievementCard {
+  background: linear-gradient(135deg, #5e63b6 0%, rgba(25, 55, 109, 0.1) 100%);
+  border-radius: 12px;
+  padding: 15px;
+  width: 400px; /* Reduced width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievementCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.achievementImage {
+  max-height: 250px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Card Details */
+.achievementDetails {
+  margin-top: 12px;
+  flex-grow: 1; /* Ensures content grows dynamically */
+}
+
+.achievementDetails h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Button Styling */
+.achievementButton {
+  display: inline-block;
+  margin-top: 12px; /* Added more space */
+  padding: 8px 12px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.achievementButton:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .achievementsGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievementCard {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+}
