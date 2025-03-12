@@ -1,4 +1,4 @@
 export function getImageUrl(imagePath) {
-    return imagePath ? `/assets/${imagePath}` : "/assets/default.png";
+    return imagePath ? `./public/assets/${imagePath}` : "/assets/default.png";
   }
   
