@@ -15,13 +15,10 @@ export const Hero = () => {
           <a href="mailto:debora.subba@msu.edu.in" className={styles.contactBtn}>
             Contact Me
           </a>
-          <a
-            href="/Deborah_Subba_CV.pdf"  // Path to your CV file
-            download="Deborah_Subba_CV-.pdf"  
-            className={styles.cvBtn}
-          >
-            Download CV
-          </a>
+          <a href="/personal-portfolio/DEBORAH-SUBBA.pdf" download className={styles.cvBtn}>
+  Download CV
+</a>
+
         </div>
       </div>
       <img
